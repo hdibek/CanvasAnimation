@@ -86,9 +86,9 @@ function drawBackgroundStuff() {
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "#27d1ff";
     ctx.fillRect(0, 0, 500, 250);
-    ctx.fillStyle = "#35cd4b";
+    ctx.fillStyle = "#70b214";
     ctx.fillRect(0, 250, 500, 250);
-    ctx.fillStyle = "#505050";
+    ctx.fillStyle = "#bdbdbd";
     ctx.fillRect(0, 425, 500, 75);
     ctx.beginPath();
     ctx.moveTo(85, 300);
@@ -101,4 +101,8 @@ function drawBackgroundStuff() {
     ctx.fillStyle = "#146613";
     ctx.fill();
     //ctx.stroke();
+
+    var img = new Image();
+    img.src = "resources/House.gif";
+    ctx.drawImage(img, 200, 207);
 }
