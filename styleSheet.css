@@ -2,3 +2,10 @@
     border:1px solid #000000;
 }
 
+.bunny{
+    position: absolute;
+    left: 10px;
+    top: 250px;
+    width: 80px;
+    display: none;
+}

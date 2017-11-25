@@ -46,6 +46,7 @@ function animate(){
     drawBackgroundStuff();
     drawClouds();
     drawCars();
+    drawBunny();
 }
 
 function drawBackground() {
@@ -74,6 +75,11 @@ function drawCars() {
     }
 
 }
+function drawBunny(){
+    var bunnies = document.getElementsByClassName("bunny");
+    var bunny = bunnies[0];
+    bunny.style.display='block';
+}
 
 function drawBackgroundStuff() {
     var canvas = document.getElementById("myCanvas");
@@ -85,13 +91,13 @@ function drawBackgroundStuff() {
     ctx.fillStyle = "#505050";
     ctx.fillRect(0, 425, 500, 75);
     ctx.beginPath();
-    ctx.moveTo(50, 300);
+    ctx.moveTo(85, 300);
     ctx.lineWidth = 10;
-    ctx.lineTo(50, 250);
+    ctx.lineTo(85, 250);
     ctx.strokeStyle = "#874400";
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(50, 200, 50, 0, 7);
+    ctx.arc(85, 200, 50, 0, 7);
     ctx.fillStyle = "#146613";
     ctx.fill();
     //ctx.stroke();
